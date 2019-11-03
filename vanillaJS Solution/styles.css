@@ -1,0 +1,103 @@
+.view-container {
+    border: 3px solid #584eec;
+    display: flex;
+}
+
+.view-container .input-section, .table-view-section {
+    width: 50%;
+    padding: 20px;
+}
+
+.view-container .error-msg {
+    font-size:11px;
+    color: #e20b0b;
+}
+
+/* Input Section CSS */
+
+.view-container .input-section {
+    border-right: 1px solid #584eec;
+}
+
+.view-container .input-section .input-element, .add-email-button{
+    display: block;
+}
+
+.view-container .input-section .input-label {
+    display: inline-block;
+}
+
+.view-container .input-section .input-label {
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.view-container .input-section .input-element {
+    width: 60%;
+    height: 25px;
+    font-size: 14px;
+    outline: none;
+}
+
+.view-container .input-section .add-email-button {
+    margin-top: 15px;
+    width: 30%;
+    padding: 8px;
+    color: #fff;
+    background-color: #584eec;
+    border: 1px solid #584eec;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-container .input-section .add-email-button:hover {
+    color: #584eec;
+    background-color: #fff;
+}
+
+/* Table View Section CSS */
+
+.view-container .table-view-section .search-container{
+    display: flex;
+}
+
+.view-container .table-view-section .search-container .input-label {
+    font-size: 17px;
+    line-height: 30px;
+    padding: 0px 15px;
+    background-color: #c5c5cc;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.view-container .table-view-section .search-container .input-element {
+    width: 70%;
+    height: 25px;
+    font-size: 14px;
+    outline: none;
+}
+
+.view-container .table-view-section .search-container .search-button {
+    width: 15%;
+    color: #fff;
+    background-color: #584eec;
+    border: 1px solid #584eec;
+    outline: none;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+}
+
+.view-container .table-view-section .output-container, .table-container{
+    padding: 20px 0px;
+}
+
+/* Table CSS */
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}

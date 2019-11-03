@@ -1,0 +1,5 @@
+<label id="lbl_email" for="txt_email" class="input-label">Email Address</label>
+<span id="spn_err_email" class="error-msg">{{emailValidation}}</span>
+<input id="txt_email" class="input-element" [(ngModel)]="emailID" (keyup)="checkEmailValidation()" autocomplete="off" />
+<button id="btn_add_email" type="submit" class="add-email-button" (click)="addEmail($event)"
+    [disabled]="emailValidation">Add</button>

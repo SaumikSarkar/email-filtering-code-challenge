@@ -1,0 +1,53 @@
+.view-container {
+    border: 3px solid #584eec;
+    display: flex;
+    .error-msg {
+        font-size:11px;
+        color: #e20b0b;
+    }
+    .input-section {
+        width: 50%;
+        padding: 20px;
+        border-right: 1px solid #584eec;
+    }
+    .table-view-section {
+        width: 50%;
+        padding: 20px;
+        .search-container {
+            display: flex;
+            .input-label {
+                font-size: 17px;
+                line-height: 30px;
+                padding: 0px 15px;
+                background-color: #c5c5cc;
+                border-radius: 5px 0px 0px 5px;
+            }
+            .input-element {
+                width: 70%;
+                height: 25px;
+                font-size: 14px;
+                outline: none;
+            }
+            .search-button {
+                width: 15%;
+                color: #fff;
+                background-color: #584eec;
+                border: 1px solid #584eec;
+                outline: none;
+                border-radius: 0px 5px 5px 0px;
+                cursor: pointer;
+            }
+        }
+        .output-container, .table-container{
+            padding: 20px 0px;
+            table {
+                width: 100%;
+            }
+            
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        }
+    }
+}

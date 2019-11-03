@@ -1,0 +1,42 @@
+<main class="view-container">
+    <section id="sec_input_section" class="input-section">
+        <app-search-component (email-value)="addEmail($event)"></app-search-component>
+    </section>
+    <section *ngIf="emailIDs.length > 0" id="sec_table_section" class="table-view-section">
+        <span id="spn_err_search_email" class="error-msg"></span>
+        <div class="search-container">
+            <label id="lbl_email_search" for="txt_email_search" class="input-label">Search</label>
+            <input id="txt_email_search" type="text" class="input-element" [(ngModel)]="searchString" />
+            <button id="btn_search_email" class="search-button" (click)="searchLogic()">Go!</button>
+        </div>
+        <div class="output-container">
+            <input type="checkbox" [(ngModel)]="isEnabled" (change)="searchLogic()" />
+            <label>Show Only Enabled</label>
+            <div class="table-container">
+                <table id="tbl_output_email">
+                    <col width="30">
+                    <col width="60">
+                    <col width="10">
+                    <thead>
+                        <tr>
+                            <th>Is Enabled</th>
+                            <th>Email</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let email of displayEmails">
+                            <td>
+                                <input type="checkbox" [(ngModel)]="email.enabled" />
+                            </td>
+                            <td>{{email.value}}</td>
+                            <td>
+                                <button class="delete-email-button" (click)="deleteRow(email.value)">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</main>

@@ -1,0 +1,36 @@
+.add-email-button {
+    display: block;
+    margin-top: 15px;
+    width: 30%;
+    padding: 8px;
+    color: #fff;
+    background-color: #584eec;
+    border: 1px solid #584eec;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-email-button:hover {
+    color: #584eec;
+    background-color: #fff;
+}
+
+.input-label {
+    display: inline-block;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.input-element {
+    display: block;
+    width: 60%;
+    height: 25px;
+    font-size: 14px;
+    outline: none;
+}
+
+.error-msg {
+    font-size:11px;
+    color: #e20b0b;
+}

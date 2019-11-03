@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coding Challenge</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body onload="onLoad()">
+    <main class="view-container">
+        <section id="sec_input_section" class="input-section">
+            <label id="lbl_email" for="txt_email" class="input-label">Email Address</label>
+            <span id="spn_err_email" class="error-msg"></span>
+            <input id="txt_email" class="input-element" onkeyup="checkEmailValidation('txt_email')"
+                autocomplete="off" />
+            <button id="btn_add_email" type="submit" class="add-email-button" onclick="addEmail(event)">Add</button>
+        </section>
+        <section id="sec_table_section" class="table-view-section">
+            <span id="spn_err_search_email" class="error-msg"></span>
+            <div class="search-container">
+                <label id="lbl_email_search" for="txt_email_search" class="input-label">Search</label>
+                <input id="txt_email_search" type="text" class="input-element" />
+                <button id="btn_search_email" class="search-button" onclick="searchEmail()">Go!</button>
+            </div>
+            <div class="output-container">
+                <input id="chk_show_enabled" type="checkbox" onclick="showEnabledEmail(event)" />
+                <label>Show Only Enabled</label>
+                <div class="table-container">
+                    <table id="tbl_output_email">
+                        <col width="30">
+                        <col width="60">
+                        <col width="10">
+                        <thead>
+                            <tr>
+                                <th>Is Enabled</th>
+                                <th>Email</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
